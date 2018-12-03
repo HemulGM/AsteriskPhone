@@ -1,0 +1,2805 @@
+Memo1
+start
+connect
+ok
+Asterisk Call Manager/1.3
+
+Response: Success
+Message: Authentication accepted
+
+Event: FullyBooted
+Privilege: system,all
+Status: Fully Booted
+
+Response: Error
+Message: Missing action in request
+
+
+Response: Success
+Message: Originate successfully queued
+
+
+Event: Newchannel
+Privilege: call,all
+Channel: SIP/1207-00000116
+ChannelState: 0
+ChannelStateDesc: Down
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??
+AccountCode: 
+Exten: 
+Context: from-internal
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: SIPCALLID
+Value: 64e0799b681e2c550e71a66d5ebc9ca9@192.168.0.111:5060
+Uniqueid: 1435290444.314
+
+Event: NewAccountCode
+Privilege: call,all
+Channel: SIP/1207-00000116
+Uniqueid: 1435290444.314
+AccountCode: 
+OldAccountCode: 
+
+
+Event: NewCallerid
+Privilege: call,all
+Channel: SIP/1207-00000116
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??
+Uniqueid: 1435290444.314
+CID-CallingPres: 0 (Presentation Allowed, Not Screened)
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1207
+Context: ext-local
+Hint: SIP/1207,CustomPresence:1207
+Status: 8
+
+
+=====================
+
+Event: Newstate
+Privilege: call,all
+Channel: SIP/1207-00000116
+ChannelState: 5
+ChannelStateDesc: Ringing
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??
+ConnectedLineNum: 1207
+ConnectedLineName: 
+Uniqueid: 1435290444.314
+
+
+
+=====================
+Event: Newstate
+Privilege: call,all
+Channel: SIP/1207-00000116
+ChannelState: 6
+ChannelStateDesc: Up
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??
+ConnectedLineNum: 1207
+ConnectedLineName: 
+Uniqueid: 1435290444.314
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1207
+Context: ext-local
+Hint: SIP/1207,CustomPresence:1207
+Status: 1
+
+Event: OriginateResponse
+Privilege: call,all
+Response: Success
+Channel: SIP/1207-00000116
+Context: from-internal
+Exten: 1200
+Reason: 4
+Uniqueid: 1435290444.314
+CallerIDNum: 1207
+CallerIDName: <unknown>
+
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 1
+Application: Macro
+AppData: user-callerid,
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_EXTEN
+Value: 1200
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_CONTEXT
+Value: from-internal
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_PRIORITY
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ARG1
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 1
+Application: Set
+AppData: TOUCH_MONITOR=1435290444.314
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: TOUCH_MONITOR
+Value: 1435290444.314
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 2
+Application: Set
+AppData: AMPUSER=1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: AMPUSER
+Value: 1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 3
+Application: GotoIf
+AppData: 0?report
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 4
+Application: ExecIf
+AppData: 1?Set(REALCALLERIDNUM=1207)
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: REALCALLERIDNUM
+Value: 1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 1207
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 5
+Application: Set
+AppData: AMPUSER=1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: AMPUSER
+Value: 1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 6
+Application: GotoIf
+AppData: 0?limit
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 7
+Application: Set
+AppData: AMPUSERCIDNAME=??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: AMPUSERCIDNAME
+Value: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 8
+Application: GotoIf
+AppData: 0?report
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 1207
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 9
+Application: Set
+AppData: AMPUSERCID=1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: AMPUSERCID
+Value: 1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 10
+Application: Set
+AppData: __DIAL_OPTIONS=tr
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __DIAL_OPTIONS
+Value: tr
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 11
+Application: Set
+AppData: CALLERID(all)="??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°????????Nˆ??" <1207>
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 0
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 0
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 12
+Application: GotoIf
+AppData: 0?limit
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 13
+Application: ExecIf
+AppData: 0?Set(GROUP(concurrency_limit)=1207)
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 14
+Application: ExecIf
+AppData: 0?Set(CHANNEL(language)=)
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 15
+Application: GotoIf
+AppData: 0?continue
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPT
+=====================
+H
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 16
+Application: Set
+AppData: __TTL=64
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __TTL
+Value: 64
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 17
+Application: GotoIf
+AppData: 1?continue
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 28
+Application: Set
+AppData: CALLERID(number)=1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 29
+Application: Set
+AppData: CALLERID(name)=??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 30
+Application: Set
+AppData: CDR(cnum)=1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 31
+Application: Set
+AppData: CDR(cnam)=??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-user-callerid
+Extension: s
+Priority: 32
+Application: Set
+AppData: CHANNEL(language)=ru
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 0
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 2
+Application: Macro
+AppData: blkvm-setifempty,
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_EXTEN
+Value: 1200
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_CONTEXT
+Value: from-internal
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_PRIORITY
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ARG1
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-blkvm-setifempty
+Extension: s
+Priority: 1
+Application: GotoIf
+AppData: 1?init
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-blkvm-setifempty
+Extension: s
+Priority: 4
+Application: Set
+AppData: __BLKVM_CHANNEL=SIP/1207-00000116
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __BLKVM_CHANNEL
+Value: SIP/1207-00000116
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-blkvm-setifempty
+Extension: s
+Priority: 5
+Application: Set
+AppData: SHARED(BLKVM,SIP/1207-00000116)=TRUE
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: SHARED(BLKVM)
+Value: TRUE
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-blkvm-setifempty
+Extension: s
+Priority: 6
+Application: Set
+AppData: GOSUB_RETVAL=TRUE
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: GOSUB_RETVAL
+Value: TRUE
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-blkvm-setifempty
+Extension: s
+Priority: 7
+Application: MacroExit
+AppData: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 0
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 3
+Application: GotoIf
+AppData: 1?skipov
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 6
+Application: Set
+AppData: RRNODEST=
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RRNODEST
+Value: 
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 7
+Application: Set
+AppData: __NODEST=1200
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __NODEST
+Value: 1200
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: default
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: default
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DB_RESULT
+Value: default
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 8
+Application: GosubIf
+AppData: 0?sub-rgsetcid,s,1()
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 9
+Application: Gosub
+AppData: sub-record-check,s,1(rg,1200,dontcare)
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: LOCAL(ARG1)
+Value: rg
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: LOCAL(ARG2)
+Value: 1200
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: LOCAL(ARG3)
+Value: dontcare
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: LOCAL(ARGC)
+Value: 3
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 1
+Application: Set
+AppData: REC_POLICY_MODE_SAVE=
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: REC_POLICY_MODE_SAVE
+Value: 
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Ch
+annel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 2
+Application: GotoIf
+AppData: 1?check
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 7
+Application: Set
+AppData: __MON_FMT=wav
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __MON_FMT
+Value: wav
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 8
+Application: GotoIf
+AppData: 1?next
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 11
+Application: ExecIf
+AppData: 0?Return()
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 12
+Application: ExecIf
+AppData: 1?Set(__REC_POLICY_MODE=dontcare)
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __REC_POLICY_MODE
+Value: dontcare
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 13
+Application: GotoIf
+AppData: 0?rg,1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 14
+Application: Set
+AppData: __REC_STATUS=INITIALIZED
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __REC_STATUS
+Value: INITIALIZED
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 15
+Application: Set
+AppData: NOW=1435290453
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: NOW
+Value: 1435290453
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 16
+Application: Set
+AppData: __DAY=26
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __DAY
+Value: 26
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 17
+Application: Set
+AppData: __MONTH=06
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __MONTH
+Value: 06
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 18
+Application: Set
+AppData: __YEAR=2015
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __YEAR
+Value: 2015
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 19
+Application: Set
+AppData: __TIMESTR=20150626-084733
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __TIMESTR
+Value: 20150626-084733
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 20
+Application: Set
+AppData: __FROMEXTEN=1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __FROMEXTEN
+Value: 1207
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 21
+Application: Set
+AppData: __CALLFILENAME=rg-1200-1207-20150626-084733-1435290444.314
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __CALLFILENAME
+Value: rg-1200-1207-20150626-084733-1435290444.314
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: s
+Priority: 22
+Application: Goto
+AppData: rg,1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: rg
+Priority: 1
+Application: GosubIf
+AppData: 0?record,1(rg,dontcare,1207)
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: sub-record-check
+Extension: rg
+Priority: 2
+Application: Return
+AppData: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: GOSUB_RETVAL
+Value: 
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 10
+Application: Set
+AppData: RingGroupMethod=ringall
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RingGroupMethod
+Value: ringall
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: from-internal
+Extension: 1200
+Priority: 11
+Application: Macro
+AppData: dial,20,tr,1201-1202-1203-1205-1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_EXTEN
+Value: 1200
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_CONTEXT
+Value: from-internal
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_PRIORITY
+Value: 11
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ARG1
+Value: 20
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ARG2
+Value: tr
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ARG3
+Value: 1201-1202-1203-1205-1207
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-dial
+Extension: s
+Priority: 1
+Application: GotoIf
+AppData: 1?dial
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-dial
+Extension: s
+Priority: 3
+Application: AGI
+AppData: dialparties.agi
+Uniqueid: 1435290444.314
+
+
+=====================
+
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __KEEPCID
+Value: TRUE
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALSTATUS_CW
+Value: 
+Uniqueid: 1435290444.314
+
+
+
+=====================
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALSTATUS
+Value: BUSY
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: __DIVERSION_REASON
+Value: user-busy
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: FILTERED_DIAL
+Value: 1201-1202-1203-1205
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ds
+Value: SIP/1201&SIP/1202&SIP/1203&SIP/1205,20,trM(auto-blkvm)
+Uniqueid: 1435290444.314
+
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: AGISTATUS
+Value: SUCCESS
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-dial
+Extension: s
+Priority: 7
+Application: Dial
+AppData: SIP/1201&SIP/1202&SIP/1203&SIP/1205,20,trM(auto-blkvm)
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALSTATUS
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALEDPEERNUMBER
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALEDPEERNAME
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ANSWEREDTIME
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALEDTIME
+Value: 
+Uniqueid: 1435290444.314
+
+
+=====================
+Event: Newchannel
+Privilege: call,all
+Channel: SIP/1201-00000117
+ChannelState: 0
+ChannelStateDesc: Down
+CallerIDNum: 1201
+CallerIDName: ???»N??±Nˆ?µN…N‚ ?›?µ???????? ???»?µ??N??µ?µ????N‡
+AccountCode: 
+Exten: 
+Context: from-internal
+Uniqueid: 1435290453.315
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1201-00000117
+Variable: SIPCALLID
+Value: 3d17f1551165371915326b985a11bc1b@192.168.0.111:5060
+Uniqueid: 1435290453.315
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1201-00000117
+Variable: DIALEDPEERNUMBER
+Value: 1201
+Uniqueid: 1435290453.315
+
+Event: Newchannel
+Privilege: call,all
+Channel: SIP/1202-00000118
+ChannelState: 0
+ChannelStateDesc: Down
+CallerIDNum: 1202
+CallerIDName: ?’???»?????? ?’?°?????? ??????Nˆ?µ????N‡
+AccountCode: 
+Exten: 
+Context: from-internal
+Uniqueid: 1435290453.316
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1202-00000118
+Variable: SIPCALLID
+Value: 4c3f20184cd5cd42078239f67e278dc8@192.168.0.111:5060
+Uniqueid: 1435290453.316
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1202-00000118
+Variable: DIALEDPEERNUMBER
+Value: 1202
+Uniqueid: 1435290453.316
+
+Event: Newchannel
+Privilege: call,all
+Channel: SIP/1203-00000119
+ChannelState: 0
+ChannelStateDesc: Down
+CallerIDNum: 1203
+CallerIDName: ?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????
+AccountCode: 
+Exten: 
+Context: from-internal
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: SIPCALLID
+Value: 27039e79379802cb616a15fa0739cc74@192.168.0.111:5060
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: DIALEDPEERNUMBER
+Value: 1203
+Uniqueid: 1435290453.317
+
+Event: Newchannel
+Privilege: call,all
+Channel: SIP/1205-0000011a
+ChannelState: 0
+ChannelStateDesc: Down
+CallerIDNum: 1205
+CallerIDName: ????????Nˆ???? ??????Nˆ?µ?? ?????°N‚???»N??µ????N‡
+AccountCode: 
+Exten: 
+Context: from-internal
+Uniqueid: 1435290453.318
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1205-0000011a
+Variable: SIPCALLID
+Value: 4a8aaeec26fb0c995df5249b4442acd4@192.168.0.111:5060
+Uniqueid: 1435290453.318
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1205-0000011a
+Variable: DIALEDPEERNUMBER
+Value: 1205
+Uniqueid: 1435290453.318
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1201
+Context: ext-local
+Hint: SIP/1201,CustomPresence:1201
+Status: 8
+
+Event: Dial
+Privilege: call,all
+SubEvent: Begin
+Channel: SIP/1207-00000116
+Destination: SIP/1201-00000117
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+ConnectedLineNum: 1207
+ConnectedLineName: <unknown>
+UniqueID: 1435290444.314
+DestUniqueID: 1435290453.315
+Dialstring: 1201
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1202
+Context: ext-local
+Hint: SIP/1202,CustomPresence:1202
+Status: 8
+
+Event: Dial
+Privilege: call,all
+SubEvent: Begin
+Channel: SIP/1207-00000116
+Destination: SIP/1202-00000118
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+ConnectedLineNum: 1207
+ConnectedLineName: <unknown>
+UniqueID: 1435290444.314
+DestUniqueID: 1435290453.316
+Dialstring: 1202
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1203
+Context: ext-local
+Hint: SIP/1203,CustomPresence:1203
+Status: 8
+
+Event: Dial
+Privilege: call,all
+SubEvent: Begin
+Channel: SIP/1207-00000116
+Destination: SIP/1203-00000119
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+ConnectedLineNum: 1207
+ConnectedLineName: <unknown>
+UniqueID: 1435290444.314
+DestUniqueID: 1435290453.317
+Dialstring: 1203
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1205
+Context: ext-local
+Hint: SIP/1205,CustomPresence:1205
+Status: 8
+
+Event: Dial
+Privilege: call,all
+SubEvent: Begin
+Channel: SIP/1207-00000116
+Destination: SIP/1205-0000011a
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+ConnectedLineNum: 1207
+ConnectedLineName: <unknown>
+UniqueID: 1435290444.314
+DestUniqueID: 1435290453.318
+Dialstring: 1205
+
+
+
+=====================
+
+Event: Newstate
+Privilege: call,all
+Channel: SIP/1201-00000117
+ChannelState: 5
+ChannelStateDesc: Ringing
+CallerIDNum: 1201
+CallerIDName: ???»N??±Nˆ?µN…N‚ ?›?µ???????? ???»?µ??N??µ?µ????N‡
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+Uniqueid: 1435290453.315
+
+
+
+=====================
+Event: Newstate
+Privilege: call,all
+Channel: SIP/1205-0000011a
+ChannelState: 5
+ChannelStateDesc: Ringing
+CallerIDNum: 1205
+CallerIDName: ????????Nˆ???? ??????Nˆ?µ?? ?????°N‚???»N??µ????N‡
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+Uniqueid: 1435290453.318
+
+
+
+=====================
+Event: Newstate
+Privilege: call,all
+Channel: SIP/1203-00000119
+ChannelState: 5
+ChannelStateDesc: Ringing
+CallerIDNum: 1203
+CallerIDName: ?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+Uniqueid: 1435290453.317
+
+
+
+=====================
+Event: Newstate
+Privilege: call,all
+Channel: SIP/1202-00000118
+ChannelState: 5
+ChannelStateDesc: Ringing
+CallerIDNum: 1202
+CallerIDName: ?’???»?????? ?’?°?????? ??????Nˆ?µ????N‡
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+Uniqueid: 1435290453.316
+
+
+
+=====================
+Event: RTCPReceived
+Privilege: reporting,all
+From: 192.168.0.229:12015
+PT: 200(Sender Report)
+ReceptionReports: 1
+SenderSSRC: 0
+FractionLost: 0
+PacketsLost: 0
+HighestSequence: 12955
+SequenceNumberCycles: 0
+IAJitter: 1
+LastSR: 0.0000000000
+DLSR: 0.0000(sec)
+
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1203
+Context: ext-local
+Hint: SIP/1203,CustomPresence:1203
+Status: 1
+
+Event: Newstate
+Privilege: call,all
+Channel: SIP/1203-00000119
+ChannelState: 6
+ChannelStateDesc: Up
+CallerIDNum: 1203
+CallerIDName: ?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+Uniqueid: 1435290453.317
+
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALSTATUS
+Value: ANSWER
+Uniqueid: 1435290444.314
+
+Event: Hangup
+Privilege: call,all
+Channel: SIP/1201-00000117
+Uniqueid: 1435290453.315
+CallerIDNum: 1201
+CallerIDName: ???»N??±Nˆ?µN…N‚ ?›?µ???????? ???»?µ??N??µ?µ????N‡
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+AccountCode: 
+Cause: 26
+Cause-txt: Answered elsewhere
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1201
+Context: ext-local
+Hint: SIP/1201,CustomPresence:1201
+Status: 0
+
+Event: Hangup
+Privilege: call,all
+Channel: SIP/1202-00000118
+Uniqueid: 1435290453.316
+CallerIDNum: 1202
+CallerIDName: ?’???»?????? ?’?°?????? ??????Nˆ?µ????N‡
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+AccountCode: 
+Cause: 26
+Cause-txt: Answered elsewhere
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1202
+Context: ext-local
+Hint: SIP/1202,CustomPresence:1202
+Status: 0
+
+Event: Hangup
+Privilege: call,all
+Channel: SIP/1205-0000011a
+Uniqueid: 1435290453.318
+CallerIDNum: 1205
+CallerIDName: ????????Nˆ???? ??????Nˆ?µ?? ?????°N‚???»N??µ????N‡
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+AccountCode: 
+Cause: 26
+Cause-txt: Answered elsewhere
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALEDPEERNAME
+Value: SIP/1203-00000119
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALEDPEERNUMBER
+Value: 1203
+Uniqueid: 1435290444.314
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1205
+Context: ext-local
+Hint: SIP/1205,CustomPresence:1205
+Status: 0
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_EXTEN
+Value: s
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_CONTEXT
+Value: macro-dial
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_PRIORITY
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 1
+Application: Set
+AppData: __MACRO_RESULT=
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: __MACRO_RESULT
+Value: 
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 2
+Application: Set
+AppData: CFIGNORE=
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: CFIGNORE
+Value: 
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 3
+Application: Set
+AppData: MASTER_CHANNEL(CFIGNORE)=
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: CFIGNORE
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 4
+Application: Set
+AppData: FORWARD_CONTEXT=from-internal
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: FORWARD_CONTEXT
+Value: from-internal
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 5
+Application: Set
+AppData: MASTER_CHANNEL(FORWARD_CONTEXT)=from-internal
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: FORWARD_CONTEXT
+Value: from-internal
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 6
+Application: Macro
+AppData: blkvm-clr,
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_EXTEN
+Value: s
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_CONTEXT
+Value: macro-auto-blkvm
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_PRIORITY
+Value: 6
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: ARG1
+Value: 
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-blkvm-clr
+Extension: s
+Priority: 1
+Application: Set
+AppData: SHARED(BLKVM,SIP/1207-00000116)=
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: SHARED(BLKVM)
+Value: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-blkvm-clr
+Extension: s
+Priority: 2
+Application: Set
+AppData: GOSUB_RETVAL=
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: GOSUB_RETVAL
+Value: 
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-blkvm-clr
+Extension: s
+Priority: 3
+Application: MacroExit
+AppData: 
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_EXTEN
+Value: s
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_CONTEXT
+Value: macro-dial
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_PRIORITY
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 7
+Application: ExecIf
+AppData: 0?Set(MASTER_CHANNEL(CONNECTEDLINE(num))=1203)
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: DB_RESULT
+Value: ?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????
+Uniqueid: 1435290453.317
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Context: macro-auto-blkvm
+Extension: s
+Priority: 8
+Application: ExecIf
+AppData: 0?Set(MA
+=====================
+STER_CHANNEL(CONNECTEDLINE(name))=?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????)
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: DB_RESULT
+Value: ?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: MACRO_DEPTH
+Value: 0
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: BRIDGEPEER
+Value: SIP/1203-00000119
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: BRIDGEPEER
+Value: SIP/1207-00000116
+Uniqueid: 1435290453.317
+
+Event: NewAccountCode
+Privilege: call,all
+Channel: SIP/1203-00000119
+Uniqueid: 1435290453.317
+AccountCode: 
+OldAccountCode: 
+
+Event: Bridge
+Privilege: call,all
+Bridgestate: Link
+Bridgetype: core
+Channel1: SIP/1207-00000116
+Channel2: SIP/1203-00000119
+Uniqueid1: 1435290444.314
+Uniqueid2: 1435290453.317
+CallerID1: 1207
+CallerID2: 1203
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: BRIDGEPEER
+Value: SIP/1203-00000119
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: BRIDGEPVTCALLID
+Value: 27039e79379802cb616a15fa0739cc74@192.168.0.111:5060
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: BRIDGEPEER
+Value: SIP/1207-00000116
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: BRIDGEPVTCALLID
+Value: 64e0799b681e2c550e71a66d5ebc9ca9@192.168.0.111:5060
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: BRIDGEPEER
+Value: SIP/1203-00000119
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: BRIDGEPVTCALLID
+Value: 27039e79379802cb616a15fa0739cc74@192.168.0.111:5060
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: BRIDGEPEER
+Value: SIP/1207-00000116
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: BRIDGEPVTCALLID
+Value: 64e0799b681e2c550e71a66d5ebc9ca9@192.168.0.111:5060
+Uniqueid: 1435290453.317
+
+
+
+=====================
+
+Event: RTCPSent
+Privilege: reporting,all
+To: 192.168.0.229:12015
+OurSSRC: 433887765
+SentNTP: 1435290458.1517649920
+SentRTP: 39680
+SentPackets: 248
+SentOctets: 39680
+ReportBlock:
+FractionLost: 0
+CumulativeLoss: 0
+IAJitter: 0.0001
+TheirLastSR: 1238962176
+DLSR: 0.0840 (sec)
+
+
+Event: RTCPReceived
+Privilege: reporting,all
+From: 192.168.0.229:12017
+PT: 200(Sender Report)
+ReceptionReports: 1
+SenderSSRC: 0
+FractionLost: 0
+PacketsLost: 0
+HighestSequence: 1331
+SequenceNumberCycles: 0
+IAJitter: 2
+LastSR: 0.0000000000
+DLSR: 0.0000(sec)
+
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOS
+Value: ssrc=1366470940;themssrc=1999473493;lp=0;rxjitter=0.000000;rxcount=186;txjitter=0.000024;txcount=195;rlp=0;rtt=0.000000
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSBRIDGED
+Value: ssrc=1366470940;themssrc=1999473493;lp=0;rxjitter=0.000000;rxcount=186;txjitter=0.000024;txcount=195;rlp=0;rtt=0.000000
+Uniqueid: 1435290444.314
+
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOSJITTER
+Value: minrxjitter=0.000000;maxrxjitter=0.000000;avgrxjitter=0.000000;stdevrxjitter=0.000000;reported_minjitter=0.000000;reported_maxjitter=0.000000;reported_avgjitter=0.000000;reported_stdevjitter=0.000000;
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSJITTERBRIDGED
+Value: minrxjitter=0.000000;maxrxjitter=0.000000;avgrxjitter=0.000000;stdevrxjitter=0.000000;reported_minjitter=0.000000;reported_maxjitter=0.000000;reported_avgjitter=0.000000;reported_stdevjitter=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOSLOSS
+Value: minrxlost=0.000000;maxrxlost=0.000000;avgrxlost=0.000000;stdevrxlost=0.000000;reported_minlost=0.000000;reported_maxlost=0.000000;reported_avglost=0.000000;reported_stdevlost=0.000000;
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSLOSSBRIDGED
+Value: minrxlost=0.000000;maxrxlost=0.000000;avgrxlost=0.000000;stdevrxlost=0.000000;reported_minlost=0.000000;reported_maxlost=0.000000;reported_avglost=0.000000;reported_stdevlost=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOSRTT
+Value: minrtt=0.000000;maxrtt=0.000000;avgrtt=0.000000;stdevrtt=0.000000;
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSRTTBRIDGED
+Value: minrtt=0.000000;maxrtt=0.000000;avgrtt=0.000000;stdevrtt=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOS
+Value: ssrc=433887765;themssrc=877297048;lp=0;rxjitter=0.000000;rxcount=449;txjitter=0.000085;txcount=434;rlp=0;rtt=0.000000
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOSBRIDGED
+Value: ssrc=433887765;themssrc=877297048;lp=0;rxjitter=0.000000;rxcount=449;txjitter=0.000085;txcount=434;rlp=0;rtt=0.000000
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSJITTER
+Value: minrxjitter=0.000000;maxrxjitter=0.000000;avgrxjitter=0.000000;stdevrxjitter=0.000000;reported_minjitter=0.000000;reported_maxjitter=0.000000;reported_avgjitter=0.000000;reported_stdevjitter=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOSJITTERBRIDGED
+Value: minrxjitter=0.000000;maxrxjitter=0.000000;avgrxjitter=0.000000;stdevrxjitter=0.000000;reported_minjitter=0.000000;reported_maxjitter=0.000000;reported_avgjitter=0.000000;reported_stdevjitter=0.000000;
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSLOSS
+Value: minrxlost=0.000000;maxrxlost=0.000000;avgrxlost=0.000000;stdevrxlost=0.000000;reported_minlost=0.000000;reported_maxlost=0.000000;reported_avglost=0.000000;reported_stdevlost=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOSLOSSBRIDGED
+Value: minrxlost=0.000000;maxrxlost=0.000000;avgrxlost=0.000000;stdevrxlost=0.000000;reported_minlost=0.000000;reported_maxlost=0.000000;reported_avglost=0.000000;reported_stdevlost=0.000000;
+Uniqueid: 1435290453.317
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSRTT
+Value: minrtt=0.000000;maxrtt=0.000000;avgrtt=0.000000;stdevrtt=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1203-00000119
+Variable: RTPAUDIOQOSRTTBRIDGED
+Value: minrtt=0.000000;maxrtt=0.000000;avgrtt=0.000000;stdevrtt=0.000000;
+Uniqueid: 1435290453.317
+
+Event: HangupRequest
+Privilege: call,all
+Channel: SIP/1203-00000119
+Uniqueid: 1435290453.317
+
+Event: Bridge
+Privilege: call,all
+Bridgestate: Unlink
+Bridgetype: core
+Channel1: SIP/1207-00000116
+Channel2: SIP/1203-00000119
+Uniqueid1: 1435290444.314
+Uniqueid2: 1435290453.317
+CallerID1: 1207
+CallerID2: 1203
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: ANSWEREDTIME
+Value: 4
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALEDTIME
+Value: 18
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-dial
+Extension: h
+Priority: 1
+Application: Macro
+AppData: hangupcall
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_IN_HANGUP
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_EXTEN
+Value: h
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_CONTEXT
+Value: macro-dial
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_PRIORITY
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 1
+Application: GotoIf
+AppData: 1?endmixmoncheck
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 9
+Application: NoOp
+AppData: End of MIXMON check
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 10
+Application: GotoIf
+AppData: 1?nomeetmemon
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 28
+Application: NoOp
+AppData: End of MEETME check
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 29
+Application: GotoIf
+AppData: 1?noautomon
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 34
+Application: NoOp
+AppData: TOUCH_MONITOR_OUTPUT=
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 35
+Application: GotoIf
+AppData: 1?noautomon2
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 41
+Application: NoOp
+AppData: MONITOR_FILENAME=
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Conte
+=====================
+==**---  Channel1: SIP/1207-00000116
+==**---  Channel2: SIP/1203-00000119
+==**---  CallerID2: 1203
+xt: macro-hangupcall
+Extension: s
+Priority: 42
+Application: GotoIf
+AppData: 1?skiprg
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 45
+Application: GotoIf
+AppData: 1?skipblkvm
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 48
+Application: GotoIf
+AppData: 1?theend
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 50
+Application: AGI
+AppData: hangup.agi
+Uniqueid: 1435290444.314
+
+
+
+=====================
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: AGISTATUS
+Value: SUCCESS
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 2
+Uniqueid: 1435290444.314
+
+
+Event: Newexten
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Context: macro-hangupcall
+Extension: s
+Priority: 51
+Application: Hangup
+AppData: 
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 1
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_EXTEN
+Value: 1200
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_CONTEXT
+Value: from-internal
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_PRIORITY
+Value: 11
+Uniqueid: 1435290444.314
+
+
+=====================
+Event: Hangup
+Privilege: call,all
+Channel: SIP/1203-00000119
+Uniqueid: 1435290453.317
+CallerIDNum: 1203
+CallerIDName: ?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????
+ConnectedLineNum: 1207
+ConnectedLineName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+AccountCode: 
+Cause: 16
+Cause-txt: Normal Clearing
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1203
+Context: ext-local
+Hint: SIP/1203,CustomPresence:1203
+Status: 0
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: DIALSTATUS
+Value: ANSWER
+Uniqueid: 1435290444.314
+
+Event: Dial
+Privilege: call,all
+SubEvent: End
+Channel: SIP/1207-00000116
+UniqueID: 1435290444.314
+DialStatus: ANSWER
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: MACRO_DEPTH
+Value: 0
+Uniqueid: 1435290444.314
+
+Event: SoftHangupRequest
+Privilege: call,all
+Channel: SIP/1207-00000116
+Uniqueid: 1435290444.314
+Cause: 16
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOS
+Value: ssrc=433887765;themssrc=877297048;lp=0;rxjitter=0.000000;rxcount=449;txjitter=0.000085;txcount=434;rlp=0;rtt=0.000000
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSJITTER
+Value: minrxjitter=0.000000;maxrxjitter=0.000000;avgrxjitter=0.000000;stdevrxjitter=0.000000;reported_minjitter=0.000000;reported_maxjitter=0.000000;reported_avgjitter=0.000000;reported_stdevjitter=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSLOSS
+Value: minrxlost=0.000000;maxrxlost=0.000000;avgrxlost=0.000000;stdevrxlost=0.000000;reported_minlost=0.000000;reported_maxlost=0.000000;reported_avglost=0.000000;reported_stdevlost=0.000000;
+Uniqueid: 1435290444.314
+
+Event: ExtensionStatus
+Privilege: call,all
+Exten: 1207
+Context: ext-local
+Hint: SIP/1207,CustomPresence:1207
+Status: 0
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOSRTT
+Value: minrtt=0.000000;maxrtt=0.000000;avgrtt=0.000000;stdevrtt=0.000000;
+Uniqueid: 1435290444.314
+
+Event: VarSet
+Privilege: dialplan,all
+Channel: SIP/1207-00000116
+Variable: RTPAUDIOQOS
+Value: ssrc=433887765;themssrc=877297048;lp=0;rxjitter=0.000000;rxcount=449;txjitter=0.000085;txcount=434;rlp=0;rtt=0.000000
+Uniqueid: 1435290444.314
+
+Event: Hangup
+Privilege: call,all
+Channel: SIP/1207-00000116
+Uniqueid: 1435290444.314
+CallerIDNum: 1207
+CallerIDName: ??NˆN??±??N†???? ?”????N‚Nˆ???? ?’?»?°??
+ConnectedLineNum: 1203
+ConnectedLineName: ?•???»?µ???????? ??????Nˆ?µ?? ?’?»?°????????Nˆ????
+AccountCode: 
+Cause: 16
+Cause-txt: Normal Clearing
+
+
+
+=====================
+
+start
+disconnect

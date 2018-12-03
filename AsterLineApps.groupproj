@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EF9A0C12-4AC9-4D8B-9E8E-A9870A39D5BB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AsterLine.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Upload\UpdateAL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MonitorLastRun\MonitorLRApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="UpdateApp\Update.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\SupportApp\SupportApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AsterLine">
+        <MSBuild Projects="AsterLine.dproj"/>
+    </Target>
+    <Target Name="AsterLine:Clean">
+        <MSBuild Projects="AsterLine.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AsterLine:Make">
+        <MSBuild Projects="AsterLine.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UpdateAL">
+        <MSBuild Projects="Upload\UpdateAL.dproj"/>
+    </Target>
+    <Target Name="UpdateAL:Clean">
+        <MSBuild Projects="Upload\UpdateAL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UpdateAL:Make">
+        <MSBuild Projects="Upload\UpdateAL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MonitorLRApp">
+        <MSBuild Projects="MonitorLastRun\MonitorLRApp.dproj"/>
+    </Target>
+    <Target Name="MonitorLRApp:Clean">
+        <MSBuild Projects="MonitorLastRun\MonitorLRApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonitorLRApp:Make">
+        <MSBuild Projects="MonitorLastRun\MonitorLRApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Update">
+        <MSBuild Projects="UpdateApp\Update.dproj"/>
+    </Target>
+    <Target Name="Update:Clean">
+        <MSBuild Projects="UpdateApp\Update.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Update:Make">
+        <MSBuild Projects="UpdateApp\Update.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SupportApp">
+        <MSBuild Projects="..\SupportApp\SupportApp.dproj"/>
+    </Target>
+    <Target Name="SupportApp:Clean">
+        <MSBuild Projects="..\SupportApp\SupportApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SupportApp:Make">
+        <MSBuild Projects="..\SupportApp\SupportApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AsterLine;UpdateAL;MonitorLRApp;Update;SupportApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AsterLine:Clean;UpdateAL:Clean;MonitorLRApp:Clean;Update:Clean;SupportApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AsterLine:Make;UpdateAL:Make;MonitorLRApp:Make;Update:Make;SupportApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
